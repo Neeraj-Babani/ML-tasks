@@ -1,0 +1,9 @@
+Confusion metrix for adult income classifier:
+ [[3814  559]
+ [ 800  764]]
+accuracy score of adult income classifier: 0.7710965133906014
+
+Confusion metrix(valideation) for adult income classifier:
+ [[9892  310]
+ [ 930 2718]]
+accuracy validateion score of adult income classifier: 0.9104693140794223

@@ -25,12 +25,16 @@ dtc.fit(x_train,y_train)
 
 #test Model
 Y_predict=dtc.predict(x_test)
-
+Y_validate=dtc.predict(x_train)
 #model evaluation
 from sklearn.metrics import confusion_matrix
 cm=confusion_matrix(y_test, Y_predict)
 
+cm_validate=confusion_matrix(y_train,Y_validate)
 score =dtc.score(x_test, y_test)
-
+score_validate=dtc.score(x_train, y_train)
 print(f"Confusion metrix for adult income classifier:\n {cm}")
 print(f"accuracy score of adult income classifier: {score}")
+
+print(f"Confusion metrix(valideation) for adult income classifier:\n {cm_validate}")
+print(f"accuracy validateion score of adult income classifier: {score_validate}")
